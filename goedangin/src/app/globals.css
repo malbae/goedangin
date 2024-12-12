@@ -19,3 +19,30 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Menyembunyikan footer di halaman dashboard */
+body[data-path="/dashboard"] footer {
+  display: none;
+}
+body[data-path="/user"] footer {
+  display: none;
+}
+body[data-path="/setor"] footer {
+  display: none;
+}
+body[data-path="/tarik"] footer {
+  display: none;
+}
+body[data-path="/konten"] footer {
+  display: none;
+}
+body[data-path="/laporan"] footer {
+  display: none;
+}
+
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
