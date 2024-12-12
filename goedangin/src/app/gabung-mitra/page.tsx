@@ -42,7 +42,7 @@ export default function GabungMitraForm() {
   return (
     <div className="flex justify-center items-center min-h-screen bg-gray-100 px-6">
       <div className="w-full max-w-4xl bg-white shadow-lg rounded-lg p-8">
-        <h2 className="text-3xl font-semibold text-center text-gray-800 mb-6">
+        <h2 className="text-3xl font-semibold text-center text-primary-500 mb-6">
           Gabung Kemitraan
         </h2>
         <form onSubmit={handleSubmit} className="grid grid-cols-1 gap-6 md:grid-cols-3">
@@ -211,7 +211,7 @@ export default function GabungMitraForm() {
           <div className="md:col-span-3">
             <button
               type="submit"
-              className="w-full py-3 bg-primary-200 text-white font-semibold rounded-md shadow hover:bg-primary-500 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full py-3 bg-primary-500 text-white font-semibold rounded-md shadow"
             >
               Daftar
             </button>

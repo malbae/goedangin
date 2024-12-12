@@ -25,7 +25,17 @@ export default function RootLayout({
   const pathname = usePathname(); // Mengambil path saat ini
 
   // Path yang tidak membutuhkan footer
-  const noFooterPaths = ["/dashboard", "/user", "/setor", "/tarik", "/konten", "/laporan"];
+  const noFooterPaths = [
+    "/dashboard",
+    "/user",
+    "/setor",
+    "/tarik",
+    "/konten",
+    "/laporan",
+  ];
+
+  // Menentukan apakah footer perlu ditampilkan
+  const showFooter = !noFooterPaths.includes(pathname);
 
   return (
     <html lang="en">
@@ -34,7 +44,7 @@ export default function RootLayout({
       >
         <Head />
         {children}
-        <Footer />
+        {showFooter && <Footer />}
       </body>
     </html>
   );
