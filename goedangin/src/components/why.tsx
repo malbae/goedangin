@@ -33,7 +33,7 @@ const stats = [
               {stats.map((stat) => (
                 <div
                   key={stat.id}
-                  className="flex flex-col items-center bg-primary-200 p-8 rounded-xl"
+                  className="flex flex-col items-center bg-gray-100 p-8 rounded-xl"
                 >
                   <div className="flex justify-center mb-4">
                     <img
