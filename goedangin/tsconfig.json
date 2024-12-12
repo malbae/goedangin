@@ -19,8 +19,17 @@
     ],
     "paths": {
       "@/*": ["./src/*"]
-    }
+    },
+    "types": ["swiper"], // Tambahkan ini untuk mendukung tipe Swiper
+    "baseUrl": ".", // Menentukan base URL untuk paths
+    "allowSyntheticDefaultImports": true // Memungkinkan impor default sintetik
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "src/types/**/*.d.ts"
+  ],
   "exclude": ["node_modules"]
 }
