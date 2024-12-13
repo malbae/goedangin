@@ -2,7 +2,6 @@
 
 const navigation = [
   { name: "Dashboard", href: "/dashboard", current: false },
-  { name: "User", href: "/user", current: false },
   { name: "Setor Barang", href: "/setor", current: true },
   { name: "Tarik Barang", href: "/tarik", current: false },
   { name: "Konten", href: "/konten", current: false },

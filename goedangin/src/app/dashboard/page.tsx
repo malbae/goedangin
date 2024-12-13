@@ -23,7 +23,6 @@ ChartJS.register(
 
 const navigation = [
   { name: "Dashboard", href: "/dashboard", current: true },
-  { name: "User", href: "/user", current: false },
   { name: "Setor Barang", href: "/setor", current: false },
   { name: "Tarik Barang", href: "/tarik", current: false },
   { name: "Konten", href: "/konten", current: false },
